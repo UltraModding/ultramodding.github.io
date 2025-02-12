@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const getRootPath = () => {
         // If on GitHub Pages
         if (window.location.hostname.includes('github.io')) {
-            const repoName = window.location.pathname.split('/')[1];
+            const pathParts = window.location.pathname.split('/');
+            const repoName = pathParts[1] || pathParts[2];
             return `/${repoName}`;
         }
         // If local

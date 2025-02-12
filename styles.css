@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-family: 'VCR OSD Mono', Arial, sans-serif !important;
 }
 
 body {
@@ -16,10 +17,6 @@ body {
 @font-face {
     font-family: 'VCR OSD Mono';
     src: url('/fonts/VCR_OSD_Mono.ttf') format('truetype');
-}
-
-.vcr-font {
-    font-family: 'VCR OSD Mono', Arial, sans-serif !important;
 }
 
 /* Sidebar Styles */

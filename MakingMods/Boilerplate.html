@@ -10,9 +10,47 @@
     <div id="sidebar"></div>
     
     <div class="content">
-        <div class="top-menu">Boilerplate</div>
-        <div class="textbox">Boilerplate</div>
+        <div class="top-menu">
+            <div class="os-selector">
+                <select id="osSelect">
+                    <option value="windows">Windows</option>
+                    <option value="mac">MacOS</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </div>
+            Boilerplate
+        </div>
+        
+        <div class="textbox">
+            
+            <div class="text">
+                <p>Text between the boxes can go here easily.</p>
+            </div>
+            
+            <!-- Windows Content -->
+            <div class="os-content" data-os="windows">
+                <h2>Windows Instructions</h2>
+                <p>Windows-specific content goes here...</p>
+            </div>
+            <!-- Mac Content -->
+            <div class="os-content" data-os="mac">
+                <h2>MacOS Instructions</h2>
+                <p>Mac-specific content goes here...</p>
+            </div>
+            <!-- Linux Content -->
+            <div class="os-content" data-os="linux">
+                <h2>Linux Instructions</h2>
+                <p>Linux-specific content goes here...</p>
+            </div>
+            
+            
+            <button id="toggleFontButton">Toggle Font</button>
+            
+        </div>
     </div>
+    
+    <script src="../toggleFont.js"></script>
     <script src="../script.js"></script>
+    <script src="../os-switcher.js"></script>
 </body>
 </html>

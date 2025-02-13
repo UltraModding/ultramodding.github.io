@@ -1,5 +1,6 @@
 # Ultramodding
 
+to run locally just use liveserver vs code extention
 
 todo:
 

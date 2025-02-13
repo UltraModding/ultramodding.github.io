@@ -34,12 +34,15 @@ class MarkdownConverter {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('Boilerplate.md')
-    .then(response => response.text())
-    .then(markdown => {
-        const converter = new MarkdownConverter();
-        document.querySelector('.text').innerHTML = converter.parse(markdown);
-        updateContent();
-    })
-    .catch(err => console.error('Error loading markdown:', err));
+    const scriptTag = document.querySelector('script[src*="markdown-converter.js"]');
+    const file = scriptTag?.getAttribute('data-md');
+
+    fetch(file)
+        .then(response => response.text())
+        .then(markdown => {
+            const converter = new MarkdownConverter();
+            document.querySelector('.text').innerHTML = converter.parse(markdown);
+            updateContent();
+        })
+        .catch(err => console.error('Error loading markdown:', err));
 });

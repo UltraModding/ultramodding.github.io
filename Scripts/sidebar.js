@@ -1,19 +1,7 @@
 //dont look past this point, its for your own sanity, its this way to try and avoid cors
 
 document.addEventListener("DOMContentLoaded", function() { // URL manager
-    const getRootPath = () => {
-        // If on GitHub Pages
-        if (window.location.hostname.includes('github.io')) {
-            const pathParts = window.location.pathname.split('/');
-            const repoName = pathParts[1] || pathParts[2];
-            return `/${repoName}`;
-        }
-        // If local
-        return '';
-    };
-
-    const rootPath = getRootPath();
-    const commonHtmlPath = `${rootPath}/sidebar.html`;
+    const commonHtmlPath = `/sidebar.html`;
 
     fetch(commonHtmlPath)
         .then(response => {

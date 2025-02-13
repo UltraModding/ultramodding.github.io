@@ -117,3 +117,7 @@ body {
 .text {
     margin: 10px 0;
 }
+
+.os-content[data-os="windows"] {
+    display: block;
+}

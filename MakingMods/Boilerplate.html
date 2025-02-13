@@ -9,7 +9,7 @@
 <body>
     <div id="sidebar"></div>
     
-    <div class="content">
+    <div id="content" class="content">
         <div class="top-menu">
             <div class="os-selector">
                 <select id="osSelect">
@@ -19,37 +19,14 @@
                 </select>
             </div>
         </div>
-        
         <div class="textbox">
-            
-            <div class="text">
-                <p>Text</p>
-            </div>
-            
-            <div class="OSSpesific">
-                <!-- Windows Content -->
-                <div class="os-content" data-os="windows">
-                    <h2>Windows Instruction</h2>
-                    <p>Binbows</p>
-                </div>
-                <!-- Mac Content -->
-                <div class="os-content" data-os="mac">
-                    <h2>Mac Instruction</h2>
-                    <p>Maccle</p>
-                </div>
-                <!-- Linux Content -->
-                <div class="os-content" data-os="linux">
-                    <h2>Linux Instruction</h2>
-                    <p>Limnux</p>
-                </div>
-            </div>
-            
-            
-            
+            <div class="text"></div>
         </div>
     </div>
     
-    <script src="../script.js"></script>
-    <script src="../os-switcher.js"></script>
+    <script src="/Scripts/markdown-converter.js"></script>
+    <script src="/Scripts/os-switcher.js"></script>
+    <script src="/Scripts/sidebar.js"></script>
+    <script src="/Scripts/dropdown.js"></script>
 </body>
 </html>

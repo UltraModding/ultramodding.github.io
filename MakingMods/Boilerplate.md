@@ -1,15 +1,2 @@
-# Common Content
-hello world
+## Mod Creation Part 1, Bepinex Setup
 
-
----os:windows
-## Windows Instructions
-Windows content
-
----os:mac
-## Mac Instructions
-Mac content
-
----os:linux
-## Linux Instructions
-Linux content

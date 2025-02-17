@@ -3,7 +3,7 @@
 ---os:windows
 ### VS2022
 Open VS2022 and then press "Create a new project"
-Find C# Class Libary and clcik on it then press Next
+Find C# Class Library and click on it then press Next
 Name your project then press next again
 Set the Framework to .NET Standard 2.1 and click Create
 ---end---
@@ -20,23 +20,24 @@ Enter you mod name then press enter 3 times
 Now that your project has been created its time for you to set up your .csproj
 
 Doing this will make the mod dll to automatically go to where your ultrakill plugin folder is and skip moving the dll yourself.
-It will also reduce problems and klet you use more mechanics in C# that makes it simpler to do things.
+It will also reduce problems and let you use more mechanics in C# that makes it simpler to do things.
 
 ### Important Note: (ModName) Will be what I use to reference whatever you called your mod!
 
 Opening the .csproj
+
 ---os:windows
 ### VS2022
-Locate the "Solution Exlorer" On the right side of the screen if it isnt there you can open it by pressing (Ctrl+Alt+L)
+Locate the "Solution Explorer" On the right side of the screen if it isn't there you can open it by pressing (Ctrl+Alt+L)
 There are 3 Objects that should draw your attention,
 Class1.cs, This file holds your code
-Dependecies, This holds the dlls your project references such as unity and ultrakill
+Dependencies, This holds the dlls your project references such as unity and ULTRAKILL
 (ModName), This will be above those 2 and its named what your mod is named, this is the .csproj we have been looking for
 Double click (ModName)
 ---end---
 ---os:mac
 ### VSCode
-Locate the "Solution Exlorer" On the right side of the screen if it isnt there you can open it by pressing (Ctrl+Alt+L)
+Locate the "Solution Explorer" On the right side of the screen if it isn't there you can open it by pressing (Ctrl+Alt+L)
 There are 2 Objects that should draw your attention,
 Class1.cs, This file holds your code
 (ModName).csproj, this is the .csproj we have been looking for

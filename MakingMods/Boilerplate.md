@@ -13,8 +13,8 @@ And wait for it to complete
 ---os:mac
 # PUT IN STUFF FOR VSCODE
 Create a new folder and open it with VSCode
-Open the extentions pannel (Ctrl+Shift+X)
-Search for C# Dev Kit and the .NET install tool (if you want a QOL Extention also install Indent-Rainbow)
+Open the extensions panel (Ctrl+Shift+X)
+Search for C# Dev Kit and the .NET install tool (if you want a QOL Extension also install Indent-Rainbow)
 ---end---
 ---os:linux
 # PUT IN STUFF FOR JB Rider

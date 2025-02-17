@@ -12,12 +12,12 @@ Copy the folder contents into the ULTRAKILL folder (where the ULTRAKILL.exe is)
 Result:
 ![The result folder](/Images/BepInExResult.png "height: 240px;")
 
-After the contents have been put in the ultrakil folder launch ULTRAKILL
+After the contents have been put in the ULTRAKILL folder launch ULTRAKILL
 
 When ultrakill gets to the main menu close it
 
 Open the BepInEx folder then open the config folder
-Open BepInEx.cfg with nopepad or any text editor of your choosing
+Open BepInEx.cfg with notepad or any text editor of your choosing
 
 Change the line:
 HideManagerGameObject = false

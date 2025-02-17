@@ -7,5 +7,5 @@ A C# Code editor, some include:
     Visual Studio Code (Any OS But hard to set up a project)
     Jetbrains Rider Community Edition (Any OS And Similar to Vis Studio 2022)
 
-Dotnet 6.0 Minimum, Dotnet 9 Reccomened
+Dotnet 6.0 Minimum, Dotnet 9 Recommend
 BepInEx-5.4.2100

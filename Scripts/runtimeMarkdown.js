@@ -64,23 +64,4 @@ class MarkdownConverter {
         return html.replace(/\n/g, '<br>');
     }
 }
-//export default MarkdownConverter;
-document.addEventListener('DOMContentLoaded', () => {
-    const scriptTag = document.querySelector('script[src*="markdown-converter.js"]');
-    const file = scriptTag?.getAttribute('data-md');
-    
-    if (file == null)
-    {
-        return;
-    }
-    
-    fetch(file)
-        .then(response => response.text())
-        .then(markdown => {
-            const converter = new MarkdownConverter();
-            document.querySelector('.text').innerHTML = converter.parse(markdown);
-            updateContent();
-        })
-        .catch(err => console.error('Error loading markdown:', err));
-});
-
+export default MarkdownConverter;

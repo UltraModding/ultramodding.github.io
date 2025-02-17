@@ -19,7 +19,7 @@ When ultrakill gets to the main menu close it
 Open the BepInEx folder then open the config folder
 Open BepInEx.cfg with nopepad or any text editor of your choosing
 
-Change the following lines:
+Change the line:
 HideManagerGameObject = false
 Change to:
 HideManagerGameObject = true

@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() { // URL manager
     const commonHtmlPath = `/sidebar.html`;
-
+    
     fetch(commonHtmlPath)
         .then(response => {
             if (!response.ok) {

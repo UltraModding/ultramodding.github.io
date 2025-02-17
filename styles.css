@@ -9,10 +9,11 @@
 
 body {
     background: #121212;
-    color: #e0e0e0;
+    color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
 }
+
 @font-face {
     font-family: 'VCR OSD Mono';
     src: url('/fonts/VCR_OSD_Mono.ttf') format('truetype');
@@ -23,7 +24,7 @@ body {
 #sidebar {
     width: 200px;
     background: #1e1e1e;
-    color: #e0e0e0;
+    color: rgba(255, 255, 255, 1);
     padding: 20px;
     position: fixed;
     height: 100vh;
@@ -33,17 +34,10 @@ body {
     z-index: 1000;
 }
 
-/*
-display: block;
-    color: #bbbbbb;
-    text-decoration: none;
-    padding: 10px 0;
-    cursor: pointer;
-*/
 
 #sidebar a {
     display: block;
-    color: #bbbbbb;
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 0;
     cursor: pointer;

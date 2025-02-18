@@ -9,11 +9,23 @@
 <body>
     <div id="sidebar"></div>
     
-    <div class="content">
-        <div class="top-menu">Playing Mods</div>
-        <div class="textbox">Playing Mod</div>
+    <div id="content" class="content">
+        <div class="top-menu">
+            <div class="os-selector">
+                <select id="osSelect">
+                    <option value="windows">Manual Setup</option>
+                    <option value="mac">R2Modman/Thunderstore</option>
+                </select>
+            </div>
+        </div>
+        <div class="textbox">
+            <div class="text"></div>
+        </div>
     </div>
-    <script src="/Scripts/dropdown.js"></script>
+    
+    <script src="/Scripts/markdown-converter.js", data-md="Setup.md"></script>
+    <script src="/Scripts/os-switcher.js"></script>
     <script src="/Scripts/sidebar.js"></script>
+    <script src="/Scripts/dropdown.js"></script>
 </body>
 </html>

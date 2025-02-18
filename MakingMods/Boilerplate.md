@@ -4,6 +4,7 @@ Now that you have BepInEx Setup you can now begin with your mod creation.
 
 ### Setup
 ---os:windows
+### Windows
 When you install VS2022 you will be prompted with the "Visual Studio Installer"
 Click the modify button on your current installation and enable:
 .NET Desktop development as well as Game Development with Unity
@@ -11,7 +12,7 @@ Then press "Modify" button on the bottom right
 And wait for it to complete
 ---end---
 ---os:mac
-# PUT IN STUFF FOR VSCODE
+### VSCode
 Create a new folder and open it with VSCode
 Open the extensions panel (Ctrl+Shift+X)
 Search for C# Dev Kit and the .NET install tool (if you want a QOL Extension also install Indent-Rainbow)

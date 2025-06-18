@@ -2,8 +2,18 @@
 ### Still WIP
 
 have Node.js installed
-to run locally run npx docusaurus start
+to run locally run: npm run serve
+to build locally run: npm run build
+to publish set the GIT_USER Enviroment variable to your github username
+linux/mac: export GIT_USER=username
+win cmd: set GIT_USER=username
+powershell: $env:GIT_USER="username"
 
 todo:
 
-make the os specific options more evident that they differ between os, perhaps a box that can also be expanded and retracted?  
+replace OS selection with the doco tabs
+keep writing documentation
+reflection documentation
+fix formatting
+change from OS to IDE
+etc

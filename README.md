@@ -1,7 +1,8 @@
 ## ULTRAKILL Modding Wiki!
 ### Still WIP
 
-to run locally just use liveserver vs code extension
+have Node.js installed
+to run locally run npx docusaurus start
 
 todo:
 

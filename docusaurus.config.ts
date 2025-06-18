@@ -22,9 +22,11 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ultramodding', // Usually your GitHub org/user name.
-  projectName: 'ultramodding', // Usually your repo name.
-
+  projectName: 'ultramodding.github.io', // Usually your repo name.
+  organizationName: 'UltraModding', // Usually your GitHub org/user name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 

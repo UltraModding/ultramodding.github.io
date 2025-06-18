@@ -22,5 +22,4 @@ Search for C# Dev Kit and the .NET install tool (if you want a QOL Extension als
 ---end---
 
 Now choose if you would like to continue from scratch or from template:
-[From Template](/MakingMods/FromTemplate.html)
-[From Scratch](/MakingMods/FromScratch.html)
+[From Scratch](FromScratch.md)

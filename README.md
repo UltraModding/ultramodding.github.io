@@ -1,6 +1,6 @@
 ## ULTRAKILL Modding Wiki!
 ### Still WIP
-
+```
 have Node.js installed
 to run locally run: npm run serve
 to build locally run: npm run build
@@ -17,3 +17,4 @@ reflection documentation
 fix formatting
 change from OS to IDE
 etc
+```

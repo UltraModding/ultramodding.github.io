@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "ultrakill"
-    ]
+    ],
+    "cSpell.enabledFileTypes": {
+        "mdx": true
+    }
 }

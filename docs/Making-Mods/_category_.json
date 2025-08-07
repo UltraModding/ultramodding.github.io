@@ -1,8 +1,0 @@
-{
-  "label": "Tutorial - Making Mods",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "A tutorial on making mods using dotnet and an IDE"
-  }
-}

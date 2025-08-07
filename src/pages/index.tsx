@@ -20,14 +20,8 @@ function HomepageHeader() {
           <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/category/tutorial---making-mods">
+            to="/docs/category/getting-started">
             Making Mods
-          </Link>
-          
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/category/tutorial---playing-mods">
-            Playing Mods
           </Link>
         </div>
       </div>

@@ -83,12 +83,8 @@ const config: Config = {
           items: [
             {
               label: 'Making Mods',
-              to: '/docs/category/tutorial---making-mods',
-            },
-            {
-              label: 'Playing Mods',
-              to: '/docs/category/tutorial---playing-mods'
-            },
+              to: '/docs/category/getting-started',
+            }
           ],
         },
         {

@@ -1,0 +1,110 @@
+---
+title: Your Second Mod
+sidebar_position: 4
+description: Making your second mod
+---
+
+# Your Second Mod
+
+In this guide you'll build on what you learned in [Your First Mod](./first-mod.mdx) by doing something that actually affects gameplay **adding speed to the player**.
+
+This will introduce you to the core workflow of ULTRAKILL modding: decompile the game's code, find what you need, and patch it.
+
+:::info Prerequisites
+- Completed [Your First Mod](./your-first-mod)
+- Either [DnSpy](https://github.com/dnSpy/dnSpy) installed **or** access to the [web decompiler](https://dll_decompiler.dolfelive.org/)
+:::
+
+---
+
+Add to your referenced dlls `UnityEngine.PhysicsModule.dll` if you have forgotten it is in [First Mod](./first-mod.mdx)
+
+---
+
+## Decompiling the Code
+
+Before you can modify the game, you need to read the code. 
+ULTRAKILL's code is in `ULTRAKILL_Data/Managed/Assembly-CSharp.dll`.
+
+### With DnSpy
+
+1. **Open DnSpy**: Go to where you installed it and run `dnSpy.exe`
+2. **Open the ULTRAKILL assembly**:
+   - (Top left) Click `File` > `Open`
+   - Navigate to your ULTRAKILL installation folder
+   - Select `ULTRAKILL_Data\Managed\Assembly-CSharp.dll`
+3. **Optional but recommended** — Set DnSpy as the default program for `.dll` files so you can open them by double-clicking.
+
+### With the Web Decompiler
+
+1. **Open the website**: [https://dll_decompiler.dolfelive.org/](https://dll_decompiler.dolfelive.org/)
+2. **Load the DLL**:
+   - Top right, click **Browse...**
+   - Navigate to your ULTRAKILL installation folder
+   - Select `ULTRAKILL_Data\Managed\Assembly-CSharp.dll`
+
+---
+
+## Finding the Player Class
+
+### Searching for NewMovement
+
+The class that controls player movement is called `NewMovement`. Here's how to find it:
+- **DnSpy**: In the left panel, expand `Assembly-CSharp` → `Assembly-CSharp.dll` → `(no namespace)`. Scroll to `NewMovement`, or use `Edit` → `Search Assemblies` and type `NewMovement`.
+- **Web Decompiler**: Type `NewMovement` into the search bar at the top left and click the result.
+
+---
+
+### Reading the Decompiled Code
+
+The first thing you'll see at the top of the file is the class declaration:
+```csharp
+public class NewMovement : MonoSingleton<NewMovement>, ITarget, IPortalTraveller
+```
+
+Breaking this down:
+- `public` — this class is accessible from anywhere in the code
+- `class NewMovement` — the name of the class we're working with
+- `MonoSingleton<NewMovement>` — this means there is only ever **one** instance of `NewMovement` in the game, and you can access it from anywhere using `NewMovement.Instance`. This is very helpful because it means you don't need to find or store a reference to the player, you can just ask for it.
+
+:::note About Decompiled Code
+What you're reading is **not** the original source code. The game is compiled for performance which sacrifices human readability for speed, and decompilers reconstruct C# from that. The result is functionally equivalent but will look different from what the developers actually wrote.
+:::
+
+---
+
+### Finding the Fields You Care About
+
+Scroll past the class declaration and you'll see a long list of fields — these are the variables that hold the player's state. The ones most relevant to movement are near the top:
+```csharp
+public float walkSpeed;
+public float jumpPower;
+```
+
+Fields marked `public` can be read and written from other classes including your mod. Fields marked `private` cannot be accessed directly from outside the class, which you'll need to work around using [Harmony patches or reflection](./TODO).
+
+`walkSpeed` is exactly what it sounds like the speed the player walks at. That's what we'll be modifying.
+
+---
+
+### A Shortcut: Decompile from Your IDE
+
+If switching between your code editor and the decompiler gets tedious, you don't have to. In almost any IDE you can **Ctrl+Click** any class name to have the IDE decompile and display the code..
+
+---
+
+## Adding Speed to the Player
+
+
+<!-- TODO: Walkthrough where speed is stored, how to read/modify it -->
+<!-- TODO: Plugin config next mod to configure speed, maybe slider for multiplier -->
+
+```csharp
+// TODO: Speed modification code here
+```
+
+---
+
+## Testing In-Game
+
+<!-- TODO: Re explain Steps to build, deploy .dll, and verify the speed change in ULTRAKILL and show it off -->

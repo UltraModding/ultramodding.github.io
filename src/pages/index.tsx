@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -9,7 +9,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -17,11 +17,11 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/category/getting-started">
-            Making Mods
+            to="/docs/Setup">
+            Wiki
           </Link>
         </div>
       </div>
@@ -30,10 +30,10 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`ULTRAKILL Modding`}
+      title={`UltraModding Wiki`}
       description="Your 1 stop shop to modding ULTRAKILL">
       <HomepageHeader />
       <main>

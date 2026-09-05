@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -9,19 +9,19 @@ type FeatureItem = {
   description: ReactNode;
 };
 
-  // {
-  //   title: 'Easy to Use',
-  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-  //   description: (
-  //     <>
-  //       Docusaurus was designed from the ground up to be easily installed and
-  //       used to get your website up and running quickly.
-  //     </>
-  //   ),
-  // },
+// {
+//   title: 'Easy to Use',
+//   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+//   description: (
+//     <>
+//       Docusaurus was designed from the ground up to be easily installed and
+//       used to get your website up and running quickly.
+//     </>
+//   ),
+// },
 
 const FeatureList: FeatureItem[] = [
-  {
+  /* {
     title: 'Add Summary',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
@@ -29,10 +29,10 @@ const FeatureList: FeatureItem[] = [
         to <code>do</code>!
       </>
     ),
-  },
+  }, */
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'UltraModding Wiki',
-  tagline: 'Guides for getting into modding ULTRAKILL.',
+  title: 'UltraModding Docs',
+  tagline: 'Documentation for ULTRAKILL modding.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -56,7 +56,7 @@ const config: Config = {
     // Replace with your project's social card
     image: './favicon.ico',
     navbar: {
-      title: 'UltraModding',
+      title: 'UltraModding Docs',
       logo: {
         alt: 'My Site Logo',
         src: 'img/favicon.ico',
@@ -66,7 +66,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Wiki',
+          label: 'Documentation',
         },
         {
           href: 'https://github.com/UltraModding/ultramodding.github.io',

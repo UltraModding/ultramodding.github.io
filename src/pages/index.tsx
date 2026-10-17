@@ -20,8 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Setup">
-            Wiki
+            to="/docs/Setup/getting-started">
+            Getting Started
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`UltraModding Wiki`}
+      title={siteConfig.title}
       description="Your 1 stop shop to modding ULTRAKILL">
       <HomepageHeader />
       <main>

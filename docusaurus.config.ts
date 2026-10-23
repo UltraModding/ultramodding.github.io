@@ -1,13 +1,13 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Ultramodding',
-  tagline: 'Ultrakill modding!',
-  favicon: './favicon.ico',
+  title: 'UltraModding Docs',
+  tagline: 'Documentation for ULTRAKILL modding.',
+  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -26,7 +26,7 @@ const config: Config = {
   organizationName: 'UltraModding', // Usually your GitHub org/user name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
-  
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -56,17 +56,17 @@ const config: Config = {
     // Replace with your project's social card
     image: './favicon.ico',
     navbar: {
-      title: 'Ultramodding',
+      title: 'UltraModding Docs',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/favicon.ico',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {
           href: 'https://github.com/UltraModding/ultramodding.github.io',
@@ -75,7 +75,7 @@ const config: Config = {
         },
       ],
     },
-    footer: {
+    /* footer: {
       style: 'dark',
       links: [
         {
@@ -98,7 +98,7 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} ULTRAMODDING, Inc. Built with Docusaurus.`,
-    },
+    }, */
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

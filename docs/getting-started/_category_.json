@@ -1,8 +1,8 @@
 {
-  "label": "Getting Started",
+  "label": "Lessons",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Getting Started with making mods"
+    "description": "Simple lessons to introduce readers to useful modding concepts. For greater detail, refer to Wiki."
   }
 }

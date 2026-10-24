@@ -17,9 +17,9 @@ Before you begin, make sure you have:
 - **Jetbrains Rider Community Edition** or **Visual Studio 2022 Community** - For writing C# code, the wiki focuses on Rider because its cross platform
       - [Download Jetbrains Rider](https://www.jetbrains.com/rider/download/)
       - [Download Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
-   - **Code Decompiler** - For examining game code and finding methods
-      - **dnSpy** [Download dnSpy](https://github.com/dnSpy/dnSpy/releases) (get the latest release)
-      - **My Decompiler Website** (https://dll_decompiler.dolfelive.org/)
+- **Code Decompiler** - For examining game code and finding methods
+   - **dnSpy** [Download dnSpy](https://github.com/dnSpy/dnSpy/releases) (get the latest release)
+   - **My Decompiler Website** (https://dll_decompiler.dolfelive.org/)
 
 ### Basic Knowledge
 
@@ -40,7 +40,7 @@ BepInEx is the mod loader that makes ULTRAKILL modding possible. Follow these st
 
 ### Step 1: Download BepInEx
 
-Download BepInEx from Thunderstore: [BepInExPack 5.4.2100](https://thunderstore.io/c/ultrakill/p/BepInEx/BepInExPack/)
+Download BepInEx from Thunderstore: [BepInEx](https://thunderstore.io/c/ultrakill/p/BepInEx/BepInExPack/)
 
 :::warning Version Compatibility
 Always use the specific BepInEx version recommended for ULTRAKILL modding. Newer versions might not be compatible and will break if people on a different version try to run your mod.
@@ -51,7 +51,7 @@ Always use the specific BepInEx version recommended for ULTRAKILL modding. Newer
 
 1. **Navigate to your ULTRAKILL installation** (where ULTRAKILL.exe is located)
    ![Opening Ultrakill dir via steam](./img/UltrakillSteamDir.png "height: 240px;")
-2. **Open the downloaded BepInEx-BepInExPack-5.4.2304.zip**
+2. **Open the downloaded BepInEx-BepInExPack-5.4.2305.zip**
 3. **Copy all contents** from this BepInEx folder, not the folder where the icon is
    ![Moving the files to ultrakill dir](./img/UltrakillBepinMove.png "height: 240px;")
 4. **Result** Your ULTRAKILL folder should now look like this:
@@ -59,8 +59,8 @@ Always use the specific BepInEx version recommended for ULTRAKILL modding. Newer
 
 ### Step 3: Initial Setup
 
-1. **Launch ULTRAKILL** and let it reach the main menu
-2. **Close ULTRAKILL** - This creates the necessary BepInEx configuration files
+1. **Launch ULTRAKILL** and let it reach the main menu, all of the necessary files will be automatically created by BepInEx
+2. **Close ULTRAKILL**
 
 ### Step 4: Configure BepInEx for Development
 
@@ -86,7 +86,7 @@ If you're only installing mods (not creating them), keep the console disabled by
 
 1. **Launch ULTRAKILL again**
 2. **Look for a console window** that opens alongside the game - this confirms BepInEx is working
-3. **Check the console output** for any error messages, ignore any errors from ultrakill, just your own mod, you can also look at ULTRAKILL's built in console by pressing
+3. **Check the console output** for any error messages, ignore any errors from ultrakill, you can also look at ULTRAKILL's built in console by pressing F8
 
 :::warning For non windows users
 Open steam and go to ULTRAKILL's **Properties**
@@ -114,6 +114,6 @@ In the **General** tab **Launch Options** add: `WINEDLLOVERRIDES="winhttp=n,b" %
 
 ## What's Next?
 
-With BepInEx installed and working you're ready to create your [First Mod](../getting-started/first-mod.mdx)!
+With BepInEx installed and working you're ready to create your [First Mod](../Getting-Started/first-mod.mdx)!
 
 The next guide will walk you through creating a simple "Hello World" plugin to verify everything is working correctly and to teach the basics.

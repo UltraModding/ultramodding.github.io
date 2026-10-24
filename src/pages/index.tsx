@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Setup/getting-started">
+            to="/docs/Setup/Getting-Started">
             Getting Started
           </Link>
         </div>

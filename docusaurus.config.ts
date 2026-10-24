@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'UltraModding Docs',
-  tagline: 'Documentation for ULTRAKILL modding.',
+  title: 'ULTRAKILL Modding',
+  tagline: 'ULTRAKILL modding tutorial and wiki.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -56,49 +56,12 @@ const config: Config = {
     // Replace with your project's social card
     image: './favicon.ico',
     navbar: {
-      title: 'UltraModding Docs',
+      title: 'ULTRAKILL Modding',
       logo: {
         alt: 'My Site Logo',
         src: 'img/favicon.ico',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
-          href: 'https://github.com/UltraModding/ultramodding.github.io',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
     },
-    /* footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Making Mods',
-              to: '/docs/category/getting-started',
-            }
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Github',
-              href: 'https://github.com/UltraModding',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} ULTRAMODDING, Inc. Built with Docusaurus.`,
-    }, */
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

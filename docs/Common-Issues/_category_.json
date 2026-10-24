@@ -1,0 +1,8 @@
+{
+  "label": "Common Issues",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "A list of common problems you may encounter."
+  }
+}

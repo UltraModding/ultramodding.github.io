@@ -11,7 +11,7 @@ In this guide you'll build on what you learned in [Your First Mod](./first-mod.m
 This will introduce you to the core workflow of ULTRAKILL modding: decompile the game's code, find what you need, and patch it.
 
 :::info Prerequisites
-- Completed [Your First Mod](./your-first-mod)
+- Completed [Your First Mod](./first-mod.mdx)
 - Either [DnSpy](https://github.com/dnSpy/dnSpy) installed **or** access to the [web decompiler](https://dll_decompiler.dolfelive.org/)
 :::
 
@@ -81,7 +81,7 @@ public float walkSpeed;
 public float jumpPower;
 ```
 
-Fields marked `public` can be read and written from other classes including your mod. Fields marked `private` cannot be accessed directly from outside the class, which you'll need to work around using [Harmony patches or reflection](./TODO).
+Fields marked `public` can be read and written from other classes including your mod. Fields marked `private` cannot be accessed directly from outside the class, which you'll need to work around using [Harmony patches or reflection](../wiki/Harmony.mdx).
 
 `walkSpeed` is exactly what it sounds like the speed the player walks at. That's what we'll be modifying.
 
